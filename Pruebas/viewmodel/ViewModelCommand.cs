@@ -42,7 +42,7 @@ namespace Pruebas.viewmodel
 
         public void Execute(object parameter)
         {
-            _executeAction(parameter)
+            _executeAction(parameter);
         }
     }
 }
