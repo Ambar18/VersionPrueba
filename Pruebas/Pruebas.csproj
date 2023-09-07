@@ -58,6 +58,9 @@
     <Compile Include="viewmodel\LoginViewModel.cs" />
     <Compile Include="viewmodel\ViewModelBase.cs" />
     <Compile Include="viewmodel\ViewModelCommand.cs" />
+    <Compile Include="view\Dashboard.xaml.cs">
+      <DependentUpon>Dashboard.xaml</DependentUpon>
+    </Compile>
     <Compile Include="view\LoginView.xaml.cs">
       <DependentUpon>LoginView.xaml</DependentUpon>
     </Compile>
@@ -73,6 +76,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="view\Dashboard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="view\LoginView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -127,6 +134,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="imagenes\pesopluma.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagenes\ladygaga.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
